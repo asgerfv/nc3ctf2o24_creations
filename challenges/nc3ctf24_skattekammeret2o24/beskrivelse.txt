@@ -1,0 +1,37 @@
+Titel:
+
+Skattekammeret 2o24
+
+
+
+Beskrivelse:
+
+Ønske: Lidt PWN her i den kolde tid!
+
+Du ved, hvad der må gøres! H4CK the NISSE-skattekammer. Et enkelt overflow ad gangen.
+
+https://tryhackme.com/jr/skattekammeret2o24
+
+
+
+
+
+
+Flag:
+
+
+
+Skattekammeret 2o24 - robotnisse
+nc3{r0b0t}
+
+
+Skattekammeret 2o24 - storenisse
+nc3{robots_base64_0g_pwn_i_en_pakke}
+
+
+Skattekammeret 2o24 - lillenisse
+nc3{buff3r0verfl0w_i_2o24}
+
+
+Skattekammeret 2o24 - root
+nc3{glædelig_jul_fra_dine_nissevenner_i_nc3}

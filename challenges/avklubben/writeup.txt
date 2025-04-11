@@ -1,0 +1,46 @@
+: AV-Klubben for NC3CTF2o24
+
+By LegendenTalerSandt + THeWiZRD
+
+* Featuring:
+
+Indirect syscalls + indirect API calls + Process Injection
+Simple Anti-Debug
+
+* Bruger kode fra:
+
+https://offensive-panda.github.io/ProcessInjectionTechniques/IndirectSyscalls/
+https://github.com/hasherezade/pe_to_shellcode
+https://github.com/gwilymk/bin2c
+
+
+
+
+Filnavn: nc3ctf2o24_avklubben.exe
+
+
+Hovedpointen: Kunne analysere malware, der laver process injection.
+
+Forhindringer:
+* SLETTET ("unreleased"): UPX packer. Segment headers er omdøbt, så man kan ikke bare lave "upx -d" på den
+* Dynamic API resolving
+* Indirect syscalls (Hardcoded til opdateret Windows version, så virker sikkert ikke på ældre/nyere)
+* Runtime Anti Virus (AV) detection via Hooks
+* Anti Debug: Finder procmon, ida, ghidra, osv.
+* Process Injection af ny .exe fil ind i explorer.exe
+
+
+* Indtast kodeordet:
+
+Nissehuen r graa
+
+* Dette gemmes i Registry
+
+* Der Injectes en ny .exe file ind i explorer.exe
+
+* Den nye .exe henter kodeordet fra registry og bruger det til at RC4 decryktere flaget via en udokumenteret API funktion i Windows.
+
+
+* Flag:
+
+nc3{v3lk0mm3n_i_revklubben_gamle_jas}
